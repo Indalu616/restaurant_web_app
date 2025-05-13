@@ -1,0 +1,334 @@
+:root {
+  --parent_width: 100vw;
+  --parent_padding: 1% 10%;
+  --paragraph_color: rgb(111, 111, 135);
+  --bold_black_color: rgb(35, 30, 65);
+  --orange_color: rgb(245, 195, 50);
+  --gray_background_color: #f7f8fa;
+}
+
+/* design checkout section */
+
+.checkout-section {
+  width: var(--parent_width);
+  padding: var(--parent_padding);
+  background-color: var(--gray_background_color);
+}
+.checkout-section .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 2%;
+}
+.checkout-section .container .user-info-section {
+  width: 60%;
+  padding: 2%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.checkout-section .container .user-info-section h2 {
+  font-size: 24px;
+  color: var(--bold_black_color);
+  margin-bottom: 20px;
+}
+.checkout-section .container .user-info-section p {
+  font-size: 16px;
+  color: var(--paragraph_color);
+  margin-bottom: 10px;
+}
+
+.checkout-section .container .user-info-section input[type="text"],
+.checkout-section .container .user-info-section input[type="email"],
+.checkout-section .container .user-info-section input[type="tel"],
+.checkout-section .container .user-info-section input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.checkout-section .container .user-info-section input[type="text"]:focus,
+.checkout-section .container .user-info-section input[type="email"]:focus,
+.checkout-section .container .user-info-section input[type="tel"]:focus,
+.checkout-section .container .user-info-section input[type="password"]:focus {
+  border-color: var(--orange_color);
+  outline: none;
+}
+.checkout-section .container .user-info-section input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--orange_color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.checkout-section .container .user-info-section input[type="submit"]:hover {
+  background-color: #f39c12;
+}
+.checkout-section .container .user-info-section .checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.checkout-section
+  .container
+  .user-info-section
+  .checkbox-label
+  input[type="checkbox"] {
+  margin-right: 10px;
+}
+.checkout-section .container .user-info-section .checkbox-label label {
+  font-size: 16px;
+  color: var(--paragraph_color);
+}
+
+.checkout-section .container .user-info-section .form-group {
+  margin-bottom: 20px;
+}
+.checkout-section .container .user-info-section .form-group label {
+  font-size: 16px;
+  color: var(--paragraph_color);
+}
+.checkout-section .container .user-info-section .form-group select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.checkout-section .container .user-info-section .form-group select:focus {
+  border-color: var(--orange_color);
+  outline: none;
+}
+.checkout-section .container .user-info-section .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.checkout-section .container .user-info-section .form-group textarea:focus {
+  border-color: var(--orange_color);
+  outline: none;
+}
+.checkout-section .container .user-info-section .form-group button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--orange_color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.checkout-section .container .user-info-section .form-group button:hover {
+  background-color: #f39c12;
+}
+.checkout-section .container .user-info-section .form-group button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+.checkout-section
+  .container
+  .user-info-section
+  .form-group
+  button:disabled:hover {
+  background-color: #ccc;
+}
+/* order summary section styling */
+.checkout-section .container .order-summary-section {
+  width: 35%;
+  padding: 2%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.checkout-section .container .order-summary-section h2 {
+  font-size: 24px;
+  color: var(--bold_black_color);
+  margin-bottom: 20px;
+}
+.checkout-section .container .order-summary-section p {
+  font-size: 16px;
+  color: var(--paragraph_color);
+  margin-bottom: 10px;
+}
+.checkout-section .container .order-summary-section .order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.checkout-section .container .order-summary-section .order-item h3 {
+  font-size: 18px;
+  color: var(--bold_black_color);
+}
+.checkout-section .container .order-summary-section .order-item p {
+  font-size: 16px;
+  color: var(--paragraph_color);
+}
+.checkout-section .container .order-summary-section .order-item span {
+  font-size: 16px;
+  color: var(--orange_color);
+}
+.checkout-section .container .order-summary-section .order-summary-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.checkout-section .container .order-summary-section .order-summary-total h3 {
+  font-size: 20px;
+  color: var(--bold_black_color);
+}
+.checkout-section .container .order-summary-section .order-summary-total p {
+  font-size: 20px;
+  color: var(--orange_color);
+}
+.checkout-section .container .order-summary-section .order-summary-total span {
+  font-size: 20px;
+  color: var(--orange_color);
+}
+.checkout-section
+  .container
+  .order-summary-section
+  .order-summary-total
+  button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--orange_color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.checkout-section
+  .container
+  .order-summary-section
+  .order-summary-total
+  button:hover {
+  background-color: #f39c12;
+}
+.checkout-section
+  .container
+  .order-summary-section
+  .order-summary-total
+  button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+.checkout-section
+  .container
+  .order-summary-section
+  .order-summary-total
+  button:disabled:hover {
+  background-color: #ccc;
+}
+.checkout-section .container .order-summary-section .order-summary-action-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.checkout-section
+  .container
+  .order-summary-section
+  .order-summary-action-btns
+  button {
+  width: 48%;
+  padding: 10px;
+  background-color: var(--orange_color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.checkout-section
+  .container
+  .order-summary-section
+  .order-summary-action-btns
+  button:hover {
+  background-color: #f39c12;
+}
+.checkout-section
+  .container
+  .order-summary-section
+  .order-summary-action-btns
+  button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* order summary section, order summary list */
+
+.order-summary-section .order-summary-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.order-summary-section .order-summary-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+.order-summary-section .order-summary-list li:last-child {
+  border-bottom: none;
+}
+.order-summary-section .order-summary-list li h3 {
+  font-size: 18px;
+  color: var(--bold_black_color);
+}
+.order-summary-section .order-summary-list li p {
+  font-size: 16px;
+  color: var(--paragraph_color);
+}
+.order-summary-section .order-summary-list li span {
+  font-size: 16px;
+  color: var(--orange_color);
+}
+.order-summary-section .order-summary-list li .item-image img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  margin-right: 10px;
+  object-fit: cover;
+}
+.order-summary-section .order-summary-list li .item-name {
+  font-size: 16px;
+  color: var(--paragraph_color);
+}
+.order-summary-section .order-summary-list li .item-price {
+  font-size: 16px;
+  color: var(--orange_color);
+}
+
+
+/* responsiveness for checkout section */
+
+@media (max-width:1083px) {
+  .checkout-section .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .checkout-section .container .user-info-section,
+  .checkout-section .container .order-summary-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .checkout-section .container .user-info-section {
+    padding: 2%;
+  }
+  .checkout-section .container .order-summary-section {
+    padding: 2%;
+  }
+}

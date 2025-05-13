@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "name": "Dadi",
+    "category": "Traditional Drinks",
+    "price": 20,
+    "description": "Quench your thirst with our traditionally made drink. from the origin",
+    "image": "../assets/drinks/img1.jpg",
+    "rating": 5
+  },
+  {
+    "id": 2,
+    "name": "Tella",
+    "category": "Traditional Drinks",
+    "price": 18,
+    "description": "A home-brewed Ethiopian beer made from barley, maize, or teff, often enjoyed during celebrations and gatherings.",
+    "image": "../assets/drinks/img2.jpg",
+    "rating": 4
+  },
+  {
+    "id": 3,
+    "name": "Tej",
+    "category": "Traditional Drinks",
+    "price": 22,
+    "description": "A traditional Ethiopian honey wine flavored with a type of hops called 'gesho leaves', served during festivals and special occasions.",
+    "image": "../assets/drinks/img3.jpg",
+    "rating": 5
+  },
+  {
+    "id": 4,
+    "name": "Buna (Ethiopian Coffee)",
+    "category": "Hot Beverages",
+    "price": 16,
+    "description": "Experience the Ethiopian coffee ceremony with this rich, aromatic coffee served traditionally in small cups.",
+    "image": "../assets/drinks/img4.jpg",
+    "rating": 5
+  },
+  {
+    "id": 5,
+    "name": "Atmet",
+    "category": "Hot Beverages",
+    "price": 14,
+    "description": "A traditional Ethiopian barley drink mixed with milk and flavored with spices like ginger and cardamom—perfect for cold mornings.",
+    "image": "../assets/drinks/img5.jpg",
+    "rating": 4
+  },
+  {
+    "id": 6,
+    "name": "Koso",
+    "category": "Traditional Drinks",
+    "price": 17,
+    "description": "A traditional herbal drink known for its medicinal properties, especially used in rural Ethiopian communities.",
+    "image": "../assets/drinks/img6.jpg",
+    "rating": 3
+  },
+  {
+    "id": 7,
+    "name": "Cheka",
+    "category": "Traditional Drinks",
+    "price": 15,
+    "description": "A fermented cereal beverage traditionally consumed in the southwestern regions of Ethiopia, often thick and porridge-like.",
+    "image": "../assets/drinks/img2.jpg",
+    "rating": 4
+  }
+]

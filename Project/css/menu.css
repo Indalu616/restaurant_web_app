@@ -1,0 +1,200 @@
+:root {
+  --parent_width: 100vw;
+  --parent_padding: 1% 10%;
+  --paragraph_color: rgb(111, 111, 135);
+  --bold_black_color: rgb(35, 30, 65);
+  --orange_color: rgb(245, 195, 50);
+  --gray_background_color: #f7f8fa;
+}
+.gadaa-menu {
+  padding: var(--parent_padding);
+  width: var(--parent_width);
+}
+.gadaa-menu .menu-hero {
+  background-color: var(--gray_background_color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 40px;
+}
+.gadaa-menu .menu-hero .menu-text h1 {
+  font-size: 50px;
+  font-weight: 600;
+  color: rgb(35, 30, 65);
+  line-height: 72px;
+}
+.gadaa-menu .menu-hero .bread-crumb button {
+  border: none;
+  padding: 20px 50px;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: var(--orange_color);
+}
+.gadaa-menu .menu-hero .bread-crumb button span:nth-child(1) a {
+  cursor: pointer;
+  color: rgb(110, 109, 109);
+  transition: all 0.45s;
+  text-decoration: none;
+}
+.gadaa-menu .menu-hero .bread-crumb button span:nth-child(1) a:hover {
+  color: var(--bold_black_color);
+}
+.gadaa-menu .menu-hero .bread-crumb button span:nth-child(2) {
+  cursor: no-drop;
+}
+
+/* product list styling */
+.slider-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.slider-container .slide {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  cursor: pointer;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.slider-container .slide .img-container {
+  width: 100%;
+}
+.slider-container .slide .img-container img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: all 0.4s;
+}
+.slider-container .slide:hover .img-container img {
+  transform: scale(1.1);
+}
+.slider-container .slide .slide-text .product-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--gray_background_color);
+  margin-top: -20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.slider-container .slide .slide-text .product-info .product_name {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider-container .slide .slide-text .product-info .price {
+  padding: 0px 10px;
+  display: block;
+  background-color: var(--orange_color);
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-container .slide .slide-text p {
+  color: var(--paragraph_color);
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.slider-container .slide .slide-text .card-footer {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.slider-container .slide .slide-text .card-footer button {
+  border: none;
+  padding: 10px;
+  background-color: var(--orange_color);
+  color: white;
+  font-weight: 600px;
+  cursor: pointer;
+}
+
+/* TESTIMONIAL SECTION DESIGN */
+.customers-testimonial {
+  margin-bottom: 100px;
+}
+.customers-testimonial .testimonial-header h1 {
+  font-size: 50px;
+  font-weight: 600;
+  color: var(--bold_black_color);
+  line-height: 72px;
+}
+.customers-testimonial .testimonial-header p {
+  font-size: 16px;
+  color: var(--paragraph_color);
+  margin-top: 20px;
+  width: 60%;
+  line-height: 30px;
+}
+
+.customers-testimonial .testimonial-container .testimonial-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 40px;
+  flex-direction: column;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  width: 20%;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.customers-testimonial .testimonial-container .testimonial-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.customers-testimonial .testimonial-container .testimonial-card p {
+  font-size: 16px;
+  color: var(--paragraph_color);
+  margin-top: 20px;
+  line-height: 30px;
+  text-align: center;
+  font-weight: 400;
+  font-style: italic;
+}
+.customers-testimonial .testimonial-container .testimonial-card h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--bold_black_color);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* testimonial buttons style */
+
+.customers-testimonial .testimonial-btns {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+  margin-top: 40px;
+}
+.customers-testimonial .testimonial-btns button {
+  border: none;
+  padding: 10px 20px;
+  background-color: var(--orange_color);
+  color: white;
+  font-weight: 600px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.customers-testimonial .testimonial-btns button:hover {
+  background-color: rgb(245, 195, 50, 0.8);
+  transform: scale(1.05);
+}

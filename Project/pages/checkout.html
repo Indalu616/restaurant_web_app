@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gadaa restaurant/checkout</title>
+    <link rel="stylesheet" href="../css/checkout.css" />
+    <link rel="stylesheet" href="../css/homepage.css" />
+    <link rel="stylesheet" href="../css/menu.css" />
+    <link rel="stylesheet" href="../css/order.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+    <!-- fontawesome cdn link -->
+    <script
+      src="https://kit.fontawesome.com/07ebc397d0.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- google font link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Geist:wght@100..900&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lugrasimo&family=Oleo+Script:wght@400;700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="logo-section">
+          <img src="../assets/logo.png" alt="logo" />
+          <h3>Gadaa</h3>
+        </div>
+        <ul id="links" class="nav-links">
+          <li class="active"><a href="./homePage.html">Home</a></li>
+          <li>About</li>
+          <li><a href="./menu.html">Menu</a></li>
+          <li><a href="./order.html">Orders</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <div class="cart-section">
+          <button class="login-btn" id="sign-out">Log out</button>
+          <div class="mobile-menu" id="mobile">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- cart summary -->
+      <div class="cart-summary" id="cart-summary">
+        <div class="cart-summary-header">
+          <h3>Cart summary</h3>
+          <img src="../assets/cart-img.png" alt="" />
+        </div>
+
+        <ul class="cart-container">
+          <li>
+            <!-- items added to the cart will dynamically loaded here -->
+          </li>
+        </ul>
+        <div class="cart-summary-action-btns">
+          <div class="btn" id="close-cart">
+            <button>CLOSE</button>
+          </div>
+          <div class="btn">
+            <button>Check Out</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="checkout-section">
+      <div class="container">
+        <div class="user-info-section">
+        <div class="checkout-header">
+          <h2>Checkout</h2>
+          <p>Fill in the form below to complete your order</p>
+        </div>
+        <form class="checkout-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input
+              type="tel"
+              id="phone"
+              placeholder="Enter your phone number"
+            />
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" id="address" placeholder="Enter your address" />
+          </div>
+          <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" id="city" placeholder="Enter your city" />
+          </div>
+          <div class="form-group">
+            <label for="postal-code">Postal Code</label>
+            <input
+              type="text"
+              id="postal-code"
+              placeholder="Enter your postal code"
+            />
+          </div>
+          <div class="form-group">
+            <label for="country">Country</label>
+            <input type="text" id="country" placeholder="Enter your country" />
+          </div>
+
+          <div class="form-group">
+            <label for="payment-method">Payment Method</label>
+            <select id="payment-method">
+              <option value="credit-card">Credit Card</option>
+              <option value="paypal">PayPal</option>
+              <option value="bank-transfer">Bank Transfer</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="order-notes">Order Notes</label>
+            <textarea
+              id="order-notes"
+              placeholder="Any special requests?"
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <button  class="checkout-btn" id="check-out-order-btn">Complete Order</button>
+          </div>
+        </form>
+
+
+      </div>
+      <div class="order-summary-section">
+        <div class="order-summary-header">
+          <h2>Order Summary</h2>
+          <p>Review your order before completing the checkout</p>
+        </div>
+        <div class="order-summary-content">
+          <ul class="order-summary-list">
+            <!-- order summary items will be dynamically loaded here -->
+            <li class="order-summary-item">
+              <span class="item-image"><img src="../assets/img1.jpg" alt=""></span>
+              <span class="item-name">Item Name</span>
+              <span class="item-quantity">Quantity</span>
+              <span class="item-price">Price</span>
+            </li>
+          </ul>
+          <div class="order-summary-total">
+            <span>Total:</span>
+            <span id="total-amount">$0.00</span>
+          </div>
+        </div>
+        <div class="order-summary-action-btns">
+          <button class="btn" id="confirm-order">Confirm Order</button>
+          <button class="btn" id="cancel-order">Cancel Order</button>
+      </div>
+   
+    </section>
+           <!-- footer section -->
+           <div class="footer-section">
+            <div class="footer-container">
+              <div class="footer-logo">
+                <img src="../assets/logo.png" alt="logo" />
+                <h3>Gadaa</h3>
+              </div>
+              <div class="footer-links">
+                <ul>
+                  <li>Home</li>
+                  <li>About</li>
+                  <li>Menu</li>
+                  <li>Orders</li>
+                  <li>Contact</li>
+                </ul>
+              </div>
+              <div class="footer-socials">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <p>&copy; 2025 Gadaa Restaurant. All rights reserved.</p>
+              <p>Designed and developed by Indalu and Amir</p>
+            </div>
+          </div>
+    <script src="../js/checkout.js"></script>
+  </body>
+</html>

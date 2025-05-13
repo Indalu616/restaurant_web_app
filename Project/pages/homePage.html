@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gadaa Restaurant</title>
+    <!-- swiper js cdn links -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- fontawesome cdn link -->
+    <script
+      src="https://kit.fontawesome.com/07ebc397d0.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- google font link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Geist:wght@100..900&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lugrasimo&family=Oleo+Script:wght@400;700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/homepage.css" type="text/css" />
+    <link rel="stylesheet" href="../css/menu.css" type="text/css" />
+    <link rel="stylesheet" href="../css/order.css" type="text/css" />
+    <link rel="stylesheet" href="../css/contact.css" type="text/css" />
+  </head>
+  <body>
+    <!-- NAVBAR SECTION -->
+    <nav>
+      <div class="container">
+        <div class="logo-section">
+          <img src="../assets/logo.png" alt="logo" />
+          <h3>Gadaa</h3>
+        </div>
+        <ul id="links" class="nav-links">
+          <li class="active">Home</li>
+          <li>About</li>
+          <li><a href="./menu.html">Menu</a></li>
+          <li><a href="./order.html">Orders</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <div class="cart-section">
+          <div class="cart" id="open-cart">
+            <i class="fa-solid fa-cart-plus"></i>
+            <span id="cart_total">0</span>
+          </div>
+          <button class="login-btn">Sign in</button>
+          <div class="mobile-menu" id="mobile">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+      <!-- cart summary -->
+      <div class="cart-summary" id="cart-summary">
+        <div class="cart-summary-header">
+          <h3>Cart summary</h3>
+          <img src="../assets/cart-img.png" alt="" />
+        </div>
+
+        <ul class="cart-container">
+          <li>
+            <!-- items added to the cart will dynamically loaded here -->
+          </li>
+        </ul>
+        <div class="cart-summary-action-btns">
+          <div class="btn" id="close-cart">
+            <button>CLOSE</button>
+          </div>
+          <div class="btn" id="goto-checkout">
+            <button>Check Out</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="hero">
+        <div class="hero-text">
+          <p><span class="greeting">Hi,Dear valued Customer!</span></p>
+          <h1>
+            We do not <span>cook</span>, we <span>create</span> your emotions!
+          </h1>
+
+          <p>
+            Consectetur numquam poro nemo veniam eligendi rem adipisci quo modi.
+          </p>
+          <div class="hero-actions">
+            <button><a href="./menu.html">Our Menu</a></button>
+            <button>About Us</button>
+          </div>
+        </div>
+        <div class="hero-logo">
+          <div class="banner">
+            <img src="../assets/hero_img.png" alt="Hero Image" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main class="main-section">
+      <h1>Most <span>popular</span> dishes</h1>
+      <div class="main-section-header">
+        <p>
+          Discover the rich flavors of Ethiopia with our most popular
+          dishes—authentic, time-honored recipes loved by locals and visitors
+          alike.
+        </p>
+        <div class="main-header-actions">
+          <div class="arrows">
+            <div class="arrow" id="prev">
+              <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div class="arrow" id="next">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+          <button>
+            <a href="./menu.html" style="text-decoration: none"
+              >View Full Menu</a
+            >
+          </button>
+        </div>
+      </div>
+
+      <!-- slider container -->
+      <div class="slider-container swiper">
+        <div class="swiper-wrapper">
+          <div class="slide swiper-slide">
+            <div class="img-container">
+              <img src="../assets/img1.jpg" alt="Kitfo" />
+            </div>
+            <div class="slide-text">
+              <div class="product-info">
+                <p class="product_name">Kitfo</p>
+                <div class="price">$20</div>
+              </div>
+              <p>
+                Consectetur numquam poro nemo veniam eligendi rem adipisci quo
+                modi.
+              </p>
+              <div class="rating">
+                <p>⭐⭐⭐⭐⭐</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <div class="img-container">
+              <img src="../assets/img6.jpg" alt="Kitfo" />
+            </div>
+            <div class="slide-text">
+              <div class="product-info">
+                <p class="product_name">Kitfo</p>
+                <div class="price">$20</div>
+              </div>
+              <p>
+                Consectetur numquam poro nemo veniam eligendi rem adipisci quo
+                modi.
+              </p>
+              <div class="rating">
+                <p>⭐⭐⭐⭐⭐</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <div class="img-container">
+              <img src="../assets/img2.jpg" alt="Kitfo" />
+            </div>
+            <div class="slide-text">
+              <div class="product-info">
+                <p class="product_name">Kitfo</p>
+                <div class="price">$20</div>
+              </div>
+              <p>
+                Consectetur numquam poro nemo veniam eligendi rem adipisci quo
+                modi.
+              </p>
+              <div class="rating">
+                <p>⭐⭐⭐⭐⭐</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <div class="img-container">
+              <img src="../assets/img3.jpg" alt="Kitfo" />
+            </div>
+            <div class="slide-text">
+              <div class="product-info">
+                <p class="product_name">Kitfo</p>
+                <div class="price">$20</div>
+              </div>
+              <p>
+                Consectetur numquam poro nemo veniam eligendi rem adipisci quo
+                modi.
+              </p>
+              <div class="rating">
+                <p>⭐⭐⭐⭐⭐</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <div class="img-container">
+              <img src="../assets/img4.jpg" alt="Kitfo" />
+            </div>
+            <div class="slide-text">
+              <div class="product-info">
+                <p class="product_name">Kitfo</p>
+                <div class="price">$20</div>
+              </div>
+              <p>
+                Consectetur numquam poro nemo veniam eligendi rem adipisci quo
+                modi.
+              </p>
+              <div class="rating">
+                <p>⭐⭐⭐⭐⭐</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <div class="img-container">
+              <img src="../assets/img5.jpg" alt="Kitfo" />
+            </div>
+            <div class="slide-text">
+              <div class="product-info">
+                <p class="product_name">Kitfo</p>
+                <div class="price">$20</div>
+              </div>
+              <p>
+                Consectetur numquam poro nemo veniam eligendi rem adipisci quo
+                modi.
+              </p>
+              <div class="rating">
+                <p>⭐⭐⭐⭐⭐</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+      <!-- OUR CHEFS SECTION -->
+
+      <section class="ourshefs">
+        <h1>Meet Our <span>Special</span> chefs</h1>
+        <div class="main-section-header">
+          <p>
+            Discover the rich flavors of Ethiopia with our most popular
+            dishes—authentic, time-honored recipes loved by locals and visitors
+            alike.
+          </p>
+          <div class="main-header-actions">
+            <button>More about us</button>
+          </div>
+        </div>
+        <div class="ourshefs-list">
+          <div class="shef-card">
+            <div class="shef-img">
+              <img src="../assets/shef1.png" alt="shef" />
+            </div>
+            <div class="shef-info">
+              <h3>Paul Trueman</h3>
+              <p>Chef</p>
+              <ul>
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-whatsapp"></i></li>
+              </ul>
+            </div>
+          </div>
+          <div class="shef-card">
+            <div class="shef-img">
+              <img src="../assets/shef2.png" alt="shef" />
+            </div>
+            <div class="shef-info">
+              <h3>Emma Newman</h3>
+              <p>Assistant Chef</p>
+              <ul>
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-whatsapp"></i></li>
+              </ul>
+            </div>
+          </div>
+          <div class="shef-card">
+            <div class="shef-img">
+              <img src="../assets/shef3.png" alt="shef" />
+            </div>
+            <div class="shef-info">
+              <h3>Oscar Oldman</h3>
+              <p>Chef</p>
+              <ul>
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-whatsapp"></i></li>
+              </ul>
+            </div>
+          </div>
+          <div class="shef-card">
+            <div class="shef-img">
+              <img src="../assets/shef4.png" alt="shef" />
+            </div>
+            <div class="shef-info">
+              <h3>Ed Freeman</h3>
+              <p>Assistant Chef</p>
+              <ul>
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-whatsapp"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--TESTIMONIAL SECTION  -->
+
+      <section class="testimonial">
+        <h1>What our <span>customers</span> say</h1>
+
+        <p class="p-header">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias dicta
+          saepe corrupti id veniam tempora eos animi eius odio cupiditate?
+        </p>
+        <div class="action-btns">
+          <div class="arrow" id="prevBtn">
+            <i class="fa-solid fa-arrow-left"></i>
+          </div>
+          <div class="arrow" id="nextBtn">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+
+        <div class="testimonial-container swiper">
+          <div class="swiper-wrapper">
+            <div class="testimonial-card swiper-slide">
+              <div class="user-message">
+                <p>
+                  <i class="fa-solid fa-quote-left"></i>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda ab, cupiditate vel quia quidem enim fugiat,
+                  explicabo, sapiente odit sint ea magnam inventore et nobis
+                  sequi. Itaque distinctio aperiam in!
+                  <i class="fa-solid fa-quote-right"></i>
+                </p>
+              </div>
+              <div class="user-img-container">
+                <div class="user-img">
+                  <img src="../assets/p1.png" alt="user image" />
+                </div>
+                <h4>Jon Doe</h4>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>Software Engineer</p>
+              </div>
+            </div>
+            <div class="testimonial-card swiper-slide">
+              <div class="user-message">
+                <p>
+                  <i class="fa-solid fa-quote-left"></i>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda ab, cupiditate vel quia quidem enim fugiat,
+                  explicabo, sapiente odit sint ea magnam inventore et nobis
+                  sequi. Itaque distinctio aperiam in!
+                  <i class="fa-solid fa-quote-right"></i>
+                </p>
+              </div>
+              <div class="user-img-container">
+                <div class="user-img">
+                  <img src="../assets/p2.png" alt="user image" />
+                </div>
+                <h4>Jon Doe</h4>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>Software Engineer</p>
+              </div>
+            </div>
+            <div class="testimonial-card swiper-slide">
+              <div class="user-message">
+                <p>
+                  <i class="fa-solid fa-quote-left"></i>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda ab, cupiditate vel quia quidem enim fugiat,
+                  explicabo, sapiente odit sint ea magnam inventore et nobis
+                  sequi. Itaque distinctio aperiam in!
+                  <i class="fa-solid fa-quote-right"></i>
+                </p>
+              </div>
+              <div class="user-img-container">
+                <div class="user-img">
+                  <img src="../assets/p3.png" alt="user image" />
+                </div>
+                <h4>Jon Doe</h4>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>Software Engineer</p>
+              </div>
+            </div>
+            <div class="testimonial-card swiper-slide">
+              <div class="user-message">
+                <p>
+                  <i class="fa-solid fa-quote-left"></i>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda ab, cupiditate vel quia quidem enim fugiat,
+                  explicabo, sapiente odit sint ea magnam inventore et nobis
+                  sequi. Itaque distinctio aperiam in!
+                  <i class="fa-solid fa-quote-right"></i>
+                </p>
+              </div>
+              <div class="user-img-container">
+                <div class="user-img">
+                  <img src="../assets/p1.png" alt="user image" />
+                </div>
+                <h4>Jon Doe</h4>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>Software Engineer</p>
+              </div>
+            </div>
+
+            <div class="testimonial-card swiper-slide">
+              <div class="user-message">
+                <p>
+                  <i class="fa-solid fa-quote-left"></i>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda ab, cupiditate vel quia quidem enim fugiat,
+                  explicabo, sapiente odit sint ea magnam inventore et nobis
+                  sequi. Itaque distinctio aperiam in!
+                  <i class="fa-solid fa-quote-right"></i>
+                </p>
+              </div>
+              <div class="user-img-container">
+                <div class="user-img">
+                  <img src="../assets/p2.png" alt="user image" />
+                </div>
+                <h4>Jon Doe</h4>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>Software Engineer</p>
+              </div>
+            </div>
+
+            <div class="testimonial-card swiper-slide">
+              <div class="user-message">
+                <p>
+                  <i class="fa-solid fa-quote-left"></i>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda ab, cupiditate vel quia quidem enim fugiat,
+                  explicabo, sapiente odit sint ea magnam inventore et nobis
+                  sequi. Itaque distinctio aperiam in!
+                  <i class="fa-solid fa-quote-right"></i>
+                </p>
+              </div>
+              <div class="user-img-container">
+                <div class="user-img">
+                  <img src="../assets/p3.png" alt="user image" />
+                </div>
+                <h4>Jon Doe</h4>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>Software Engineer</p>
+              </div>
+            </div>
+
+            <div class="testimonial-card swiper-slide">
+              <div class="user-message">
+                <p>
+                  <i class="fa-solid fa-quote-left"></i>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda ab, cupiditate vel quia quidem enim fugiat,
+                  explicabo, sapiente odit sint ea magnam inventore et nobis
+                  sequi. Itaque distinctio aperiam in!
+                  <i class="fa-solid fa-quote-right"></i>
+                </p>
+              </div>
+              <div class="user-img-container">
+                <div class="user-img">
+                  <img src="../assets/p2.png" alt="user image" />
+                </div>
+                <h4>Jon Doe</h4>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>Software Engineer</p>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- login modal -->
+    <div class="login-container">
+      <div class="login-modal">
+        <div class="login-header">
+          <h3>Login</h3>
+          <i class="fa-solid fa-xmark" id="close-login"></i>
+        </div>
+        <div id="login-form" class="form">
+          <div class="input-container">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <div class="input-container">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required />
+          </div>
+          <button id="signin-btn">Login</button>
+        </div>
+        <div class="login-footer">
+          <p>Don't have an account?</p>
+          <button id="register-btn">Register</button>
+        </div>
+        <div class="register-modal">
+          <div class="register-header">
+            <h3>Register</h3>
+            <button id="reg-login-btn">Login</button>
+          </div>
+          <!-- form -->
+          <div id="register-form" class="form">
+            <div class="input-container">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="userName" required />
+            </div>
+            <div class="input-container">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="userEmail" required />
+            </div>
+            <div class="input-container">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="userPassword"
+                required
+              />
+            </div>
+            <button id="submit-btn">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer section -->
+    <div class="footer-section">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="../assets/logo.png" alt="logo" />
+          <h3>Gadaa</h3>
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Menu</li>
+            <li>Orders</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="footer-socials">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Gadaa Restaurant. All rights reserved.</p>
+        <p>Designed and developed by Indalu and Amir</p>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../js/home.js"></script>
+    <script src="../js/menu.js"></script>
+  </body>
+</html>

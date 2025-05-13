@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Kitfo",
+    "category": "Main Dishes",
+    "price": 20,
+    "description": "Discover the rich flavors of Ethiopia with our most popular dishes—authentic, time-honored recipes loved by locals and visitors alike.",
+    "image": "../assets/img1.jpg",
+    "rating": 5
+  },
+  {
+    "id": 2,
+    "name": "Tibs",
+    "category": "Main Dishes",
+    "price": 21,
+    "description": "Discover the rich flavors of Ethiopia with our most popular dishes—authentic, time-honored recipes loved by locals and visitors alike.",
+    "image": "../assets/img2.jpg",
+    "rating": 5
+  },
+  {
+    "id": 3,
+    "name": "Injera",
+    "category": "Main Dishes",
+    "price": 15,
+    "description": "A sourdough flatbread made from teff flour, injera is the staple of Ethiopian cuisine, served with various stews and salads on top.",
+    "image": "../assets/img3.jpg",
+    "rating": 5
+  },
+  {
+    "id": 4,
+    "name": "Doro Wat",
+    "category": "Main Dishes",
+    "price": 22,
+    "description": "A spicy chicken stew simmered in berbere spice and niter kibbeh, traditionally served with a hard-boiled egg and injera.",
+    "image": "../assets/img4.jpg",
+    "rating": 5
+  },
+  {
+    "id": 5,
+    "name": "Shiro",
+    "category": "Vegetarian Dishes",
+    "price": 16,
+    "description": "A rich, thick stew made from ground chickpeas or broad beans, seasoned with garlic, onions, and Ethiopian spices.",
+    "image": "../assets/img5.jpg",
+    "rating": 4
+  },
+  {
+    "id": 6,
+    "name": "Gomen",
+    "category": "Vegetarian Dishes",
+    "price": 14,
+    "description": "A savory dish of slow-cooked collard greens, spiced with garlic, onions, and sometimes enriched with clarified butter.",
+    "image": "../assets/img2.jpg",
+    "rating": 4
+  },
+  {
+    "id": 7,
+    "name": "Chechebsa",
+    "category": "Breakfast",
+    "price": 12,
+    "description": "A traditional breakfast dish made from torn pieces of flatbread sautéed in spiced butter and berbere, often served with honey or yogurt.",
+    "image": "../assets/img6.jpg",
+    "rating": 5
+  },
+  {
+    "id": 8,
+    "name": "Genfo",
+    "category": "Breakfast",
+    "price": 13,
+    "description": "A thick porridge made from barley or wheat flour, typically served with a spicy, buttery berbere sauce in the center.",
+    "image": "../assets/img4.jpg",
+    "rating": 5
+  }
+]

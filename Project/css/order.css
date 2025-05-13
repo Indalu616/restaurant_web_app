@@ -1,0 +1,126 @@
+:root {
+  --parent_width: 100vw;
+  --parent_padding: 1% 10%;
+  --paragraph_color: rgb(111, 111, 135);
+  --bold_black_color: rgb(35, 30, 65);
+  --orange_color: rgb(245, 195, 50);
+  --gray_background_color: #f7f8fa;
+}
+.order-section {
+  width: var(--parent_width);
+  padding: var(--parent_padding);
+  background-color: var(--gray_background_color);
+}
+.order-section .order-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 2%;
+  flex-direction: column;
+}
+
+/* when there is no order section styling */
+.order-section .order-container .no-order {
+  width: 100%;
+  padding: 2%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 4rem;
+  display: none;
+}
+.order-section .order-container .no-order h3 {
+  font-size: 24px;
+  color: var(--bold_black_color);
+  margin-bottom: 20px;
+}
+.order-section .order-container .no-order img {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.order-section .order-container .no-order button {
+  padding: 10px 20px;
+  background-color: var(--orange_color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;  
+
+}
+.order-section .order-container .no-order button:hover {
+  background-color: #f39c12;
+}
+.order-section .order-container .no-order button:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* end or no order section design */
+.order-section .order-container h1 {
+  font-size: 24px;
+  color: var(--bold_black_color);
+  margin-bottom: 20px;
+}
+.order-section .order-container p {
+  font-size: 16px;
+  color: var(--paragraph_color);
+  margin-bottom: 10px;
+}
+.order-section .order-container .order-card {
+  width: 100%;
+  padding: 2%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+.order-section .order-container .order-card .order-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.order-section .order-container .order-card .order-card-header h3 {
+  font-size: 20px;
+  color: var(--bold_black_color);
+}
+.order-section
+  .order-container
+  .order-card
+  .order-card-body
+  .order-card-item
+  img {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.order-section .order-container .order-card .order-card-body .order-card-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 30px;
+}
+
+.order-section
+  .order-container
+  .order-card
+  .order-card-body
+  .order-card-item
+  h4 {
+  font-size: 18px;
+  color: var(--bold_black_color);
+}
+.order-section
+  .order-container
+  .order-card
+  .order-card-body
+  .order-card-item
+  p {
+  font-size: 16px;
+  color: var(--paragraph_color);
+}

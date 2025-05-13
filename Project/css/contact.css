@@ -1,0 +1,264 @@
+:root {
+  --parent_width: 100vw;
+  --parent_padding: 1% 10%;
+  --paragraph_color: rgb(111, 111, 135);
+  --bold_black_color: rgb(35, 30, 65);
+  --orange_color: rgb(245, 195, 50);
+  --gray_background_color: #f7f8fa;
+}
+
+.contact-section {
+  width: var(--parent_width);
+  padding: var(--parent_padding);
+  background-color: var(--gray_background_color);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  gap: 2rem;
+}
+.contact-section .contact-header h1 {
+  font-size: 2.5rem;
+  color: var(--bold_black_color);
+  margin-bottom: 1rem;
+}
+.contact-section .contact-header p {
+  font-size: 1rem;
+  color: var(--paragraph_color);
+  margin-bottom: 2rem;
+}
+.contact-section .contact-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+.contact-section .contact-info .info-item {
+  flex: 1;
+  margin: 0 1rem;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.contact-section .contact-info .info-item h3 {
+  font-size: 1.5rem;
+  color: var(--bold_black_color);
+  margin-bottom: 1rem;
+}
+.contact-section .contact-info .info-item p {
+  font-size: 1rem;
+  color: var(--paragraph_color);
+  margin-bottom: 1rem;
+}
+.contact-section .contact-info .info-item p a {
+  color: var(--orange_color);
+
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+.contact-section .contact-info .info-item i {
+  font-size: 2rem;
+  color: var(--orange_color);
+  margin-bottom: 1rem;
+}
+.contact-section .contact-form {
+  width: 100%;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.contact-section .contact-form h2 {
+  font-size: 2rem;
+  color: var(--bold_black_color);
+  margin-bottom: 1rem;
+}
+.contact-section .contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+.contact-section .contact-form form input,
+.contact-section .contact-form form textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid var(--paragraph_color);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.contact-section .contact-form form button {
+  background-color: var(--orange_color);
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.contact-section .contact-form form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact-section .contact-form form .form-group label {
+  font-size: 1rem;
+  color: var(--paragraph_color);
+}
+.contact-section .contact-form form input:focus,
+.contact-section .contact-form form textarea:focus {
+  border-color: var(--orange_color);
+  outline: none;
+}
+.contact-section .contact-form form input::placeholder,
+.contact-section .contact-form form textarea::placeholder {
+  color: var(--paragraph_color);
+  font-size: 1rem;
+}
+.contact-section .contact-form form input:disabled,
+.contact-section .contact-form form textarea:disabled {
+  background-color: rgb(240, 240, 240);
+  border-color: rgb(200, 200, 200);
+  cursor: not-allowed;
+}
+.contact-section .contact-form form button:hover {
+  background-color: rgb(255, 165, 0);
+}
+.contact-section .contact-form form button:disabled {
+  background-color: rgb(200, 200, 200);
+  cursor: not-allowed;
+}
+.contact-section .contact-form form button:disabled:hover {
+  background-color: rgb(200, 200, 200);
+}
+
+/* Footer section styling  */
+
+.footer-section {
+  width: var(--parent_width);
+  padding: var(--parent_padding);
+  background-color: var(--gray_background_color);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+.footer-section .footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+.footer-section .footer-container .footer-logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-section .footer-container .footer-logo h3 {
+  font-size: 2rem;
+  color: var(--bold_black_color);
+  margin-bottom: 1rem;
+}
+.footer-section .footer-container .footer-links {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-section .footer-container .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 2rem;
+}
+.footer-section .footer-container .footer-links ul li {
+  font-size: 1rem;
+  color: var(--paragraph_color);
+}
+.footer-section .footer-container .footer-links ul li a {
+  color: var(--orange_color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+.footer-section .footer-container .footer-links ul li a:hover {
+  color: rgb(255, 165, 0);
+}
+.footer-section .footer-container .footer-socials {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-section .footer-container .footer-socials i {
+  font-size: 2rem;
+  color: var(--orange_color);
+  margin: 0 1rem;
+  transition: color 0.3s ease;
+}
+.footer-section .footer-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+.footer-section .footer-bottom p {
+  font-size: 1rem;
+  color: var(--paragraph_color);
+}
+.footer-section .footer-bottom p a {
+  color: var(--orange_color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+.footer-section .footer-container .footer-bottom p a:hover {
+  color: rgb(255, 165, 0);
+}
+.footer-section .footer-container .footer-logo img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+
+/* responsiveness for footer section */
+@media(max-width:1028px){
+  .footer-section .footer-container {
+    flex-direction: column;
+    align-items: start;
+  }
+  .footer-section .footer-container .footer-logo {
+    margin-bottom: 2rem;
+  }
+  .footer-section .footer-container .footer-links {
+    margin-bottom: 2rem;
+  }
+  .footer-section .footer-container .footer-socials {
+    margin-bottom: 2rem;
+  }
+}
+@media(max-width:550px){
+  .footer-section .footer-container .footer-links ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-section .footer-container .footer-links ul li {
+    margin-bottom: 1rem;
+  }
+  .footer-section .footer-container .footer-socials i {
+    font-size: 1.5rem;
+  }
+}

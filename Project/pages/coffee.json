@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "name": "Black Coffee",
+    "category": "Black Coffee",
+    "price": 20,
+    "description": "Coffee from its Origin. Proudly grown in Ethiopia.",
+    "image": "../assets/coffee/img1.jpg",
+    "rating": 5
+  },
+  {
+    "id": 2,
+    "name": "Macchiato",
+    "category": "Espresso Based",
+    "price": 22,
+    "description": "A popular Ethiopian espresso topped with a small amount of steamed milk for a rich, bold flavor.",
+    "image": "../assets/coffee/img2.jpg",
+    "rating": 5
+  },
+  {
+    "id": 3,
+    "name": "Spiced Coffee",
+    "category": "Traditional",
+    "price": 21,
+    "description": "A unique brew infused with Ethiopian spices such as cinnamon, cardamom, and cloves, offering a flavorful twist.",
+    "image": "../assets/coffee/img3.jpg",
+    "rating": 4
+  },
+  {
+    "id": 4,
+    "name": "Jebena Coffee",
+    "category": "Traditional",
+    "price": 24,
+    "description": "Brewed in a traditional clay pot called a 'jebena', this coffee is part of the ceremonial heritage of Ethiopia.",
+    "image": "../assets/coffee/img4.jpg",
+    "rating": 5
+  },
+  {
+    "id": 5,
+    "name": "Bunna Be Neter Kibbeh",
+    "category": "Specialty",
+    "price": 23,
+    "description": "A bold Ethiopian coffee mixed with spiced clarified butter, offering a rich and warming traditional flavor.",
+    "image": "../assets/coffee/img5.jpg",
+    "rating": 4
+  },
+  {
+    "id": 6,
+    "name": "Cold Brew Ethiopian",
+    "category": "Cold Coffee",
+    "price": 19,
+    "description": "Smooth, slow-brewed Ethiopian coffee served chilled, highlighting its natural fruity and floral notes.",
+    "image": "../assets/coffee/img6.jpg",
+    "rating": 4
+  },
+  {
+    "id": 7,
+    "name": "Ethiopian Latte",
+    "category": "Espresso Based",
+    "price": 21,
+    "description": "Espresso made from Ethiopian beans topped with steamed milk for a smooth and creamy experience.",
+    "image": "../assets/coffee/img3.jpg",
+    "rating": 5
+  }
+]

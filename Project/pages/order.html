@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gadaa restaurant /Orders</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- fontawesome cdn link -->
+    <script
+      src="https://kit.fontawesome.com/07ebc397d0.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- google font link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Geist:wght@100..900&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lugrasimo&family=Oleo+Script:wght@400;700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/homepage.css" />
+    <link rel="stylesheet" href="../css/menu.css" />
+    <link rel="stylesheet" href="../css/order.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="logo-section">
+          <img src="../assets/logo.png" alt="logo" />
+          <h3>Gadaa</h3>
+        </div>
+        <ul id="links" class="nav-links">
+          <li><a href="./homePage.html">Home</a></li>
+          <li>About</li>
+          <li><a href="./menu.html">Menu</a></li>
+          <li class="active">Orders</li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <div class="cart-section">
+          <button class="login-btn" id="logout-btn">Log out</button>
+          <div class="mobile-menu" id="mobile">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- TRACK YOUR ORDER SECTION -->
+    <div class="order-section">
+      <div class="order-container">
+        <h1>Track Your Orders</h1>
+        <!-- oredered items will be dynamically loaded here -->
+         <!-- will be shown when there is no order -->
+        <div class="no-order">
+          <img src="../assets/emptyCart/empty_cart.png" alt="no order" />
+          <h3>You have no orders yet</h3>
+          <p>Order your favorite food now!</p>
+          <button><a href="./menu.html">Order Now</a></button>
+      </div>
+    </div>
+    </div>
+    <!-- footer section -->
+    <div class="footer-section">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="../assets/logo.png" alt="logo" />
+          <h3>Gadaa</h3>
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Menu</li>
+            <li>Orders</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="footer-socials">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Gadaa Restaurant. All rights reserved.</p>
+        <p>Designed and developed by Indalu and Amir</p>
+      </div>
+    </div>
+    <script src="../js/order.js"></script>
+    <!-- <script src="../js/checkout.js"></script>
+    <script src="../js/menu.js"></script> -->
+    <script src="../js/home.js"></script>
+  </body>
+</html>
